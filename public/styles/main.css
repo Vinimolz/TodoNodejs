@@ -1,0 +1,74 @@
+/* Apply some basic styles to the body and HTML elements */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Create a flex container for the body to enable sticky footer */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the header with the navbar */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    height: 50px;
+}
+
+/* Style the container within the navbar */
+.container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+/* Style the logo */
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Style the navigation links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    flex-grow: 1; /* Grow to fill remaining vertical space */
+    padding: 20px; /* Adjust this to leave space for the footer */
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;
+    height: 30px;
+}
+
