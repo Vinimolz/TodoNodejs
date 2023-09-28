@@ -23,5 +23,34 @@ navLinks.forEach(link => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const taskList = document.getElementById('task-list');
+
+    taskList.addEventListener('click', (e) => {
+        console.log(e.classList)
+        if (e.target && e.target.classList.contains('complete-button')) {
+            console.log("Within if statement")
+            const taskRow = e.target.closest('tr');
+            const taskNameCell = taskRow.querySelector('td:first-child');
+            const completeButton = e.target;
+
+            // Toggle the completion status
+            const isCompleted = taskRow.classList.toggle('completed');
+
+            // Update the button text based on the completion status
+            completeButton.textContent = isCompleted ? 'Completed' : 'Complete';
+
+            // Optionally, you can add more styling for completed tasks
+            if (isCompleted) {
+                taskNameCell.style.textDecoration = 'line-through';
+            } else {
+                taskNameCell.style.textDecoration = 'none';
+            }
+        }
+    });
+});
+
+
+
 
 

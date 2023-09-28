@@ -73,7 +73,7 @@ footer {
     display: flex;
     justify-content: center; /* Horizontal centering */
     align-items: center;
-    height: 30px;
+    height: 20px;
 }
 
 table {
@@ -93,6 +93,14 @@ th {
     background-color: #f2f2f2;
 }
 
+td {
+    width: 50%;
+}
+
+.completed td:first-child {
+    text-decoration: line-through;
+}
+
 #right-table{
     direction: rtl;
 }
@@ -108,6 +116,7 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+    width: 100px;
 }
 
 button:hover {
@@ -119,6 +128,7 @@ form {
     flex-direction: row; /* Stack elements vertically */
     justify-content: center; /* Center items horizontally */
     margin-top: 20px;
+    
 }
 
 #title{

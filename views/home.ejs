@@ -4,6 +4,9 @@
         color: #007bff;
         text-decoration: underline;
     }
+    #input-button{
+        margin-left: 10px;
+    }
 </style>
     <table>
         <thead>
@@ -16,17 +19,17 @@
             <!-- Tasks will be dynamically added here -->
             <tr>
                 <td>Task 1</td>
-                <td id="right-table"><button>Complete</button></td>
+                <td id="right-table"><button class="complete-button">Complete</button></td>
             </tr>
             <tr>
                 <td>Task 2</td>
-                <td id="right-table"><button>Complete</button></td>
+                <td id="right-table"><button class="complete-button">Complete</button></td>
             </tr>
         </tbody>
     </table>
     <form id="task-form">
         <input type="text" id="task-name" placeholder="Enter a new task" required>
-        <button type="submit">Add Task</button>
+        <button id="input-button" type="submit">Add Task</button>
     </form>
 
 <%- include("partials/footer.ejs") %>

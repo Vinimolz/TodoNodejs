@@ -1,9 +1,11 @@
 import express from "express";
 import bodyParser from "body-parser";
 
-
 const app = express();
 const PORT = 3000;
+
+const today = [];
+const allTasks = [];
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -18,6 +20,14 @@ app.get("/allTasks", (req, res)=>{
 
 app.get("/about", (req, res)=>{
     res.render("about.ejs");
+});
+
+app.post("/addAll", (req, res) => {
+    
+});
+
+app.post("/addToday", (req, res) => {
+
 });
 
 app.get("/contact", (req, res)=>{
