@@ -93,8 +93,8 @@ th {
     background-color: #f2f2f2;
 }
 
-td{
-    
+#right-table{
+    direction: rtl;
 }
 
 input[type="text"] {
@@ -119,6 +119,11 @@ form {
     flex-direction: row; /* Stack elements vertically */
     justify-content: center; /* Center items horizontally */
     margin-top: 20px;
+}
+
+#title{
+    font-size: larger;
+    color: #007bff;
 }
 
 
